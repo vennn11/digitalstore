@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linktree geminicuyyy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --primary-dark: #0b5ed7;
+      --bg-light: #ffffff;
+      --bg-dark: #1e1e1e;
+      --text-light: #ffffff;
+      --text-dark: #212529;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #e3f2fd);
+      overflow-x: hidden;
+    }
+
+    body.dark-mode {
+      background: linear-gradient(to bottom right, #121212, #1e1e1e);
+      color: var(--text-light);
+    }
+
+    .linktree-container {
+      background: var(--bg-light);
+      border-radius: 16px;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      max-width: 480px;
+      width: 100%;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode .linktree-container {
+      background: var(--bg-dark);
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+      border: 3px solid var(--primary);
+    }
+
+    .linktree-button {
+      margin: 10px 0;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 10px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .linktree-button:hover {
+      background-color: var(--primary-dark);
+      transform: scale(1.03);
+    }
+
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: 2px solid var(--primary);
+      padding: 5px 12px;
+      border-radius: 8px;
+      color: var(--primary);
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .dark-toggle:hover {
+      background-color: var(--primary);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+  <div class="linktree-container">
+    <img src="https://img.pikbest.com/origin/10/37/43/31apIkbEsTi5b.png!w700wp" alt="Foto Profil" class="avatar">
+    <h3 class="mb-3">@STOREDIGITAL</h3>
+    <p class="text-muted mb-4">silahkan lihat lihat produk yang sangat bagus dan bisa dijual kembali 100% untung langsung cek sekarang dan segera dapatkan ebook gratis dibawah ini 👇</p>
+
+    <a href="https://wa.me/6282225921652" class="linktree-button" target="_blank">💬 Chat WhatsApp</a>
+    <a href="https://lynk.id/geminicuyyy" class="linktree-button" target="_blank">🛒 Lynk.id</a>
+    <a href="https://wa.me/6282225921652" class="linktree-button" target="_blank">🛒 Top Up Game & Followers</a>
+    <a href="https://drive.google.com/file/d/1Yjsi20rel_Ypr6BBaVsLLAcnaaPa_kR/view?usp=drivesdk" class="linktree-button" target="_blank">📥 Download Ebook</a>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+
+</html>
